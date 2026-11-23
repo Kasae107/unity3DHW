@@ -1,0 +1,6 @@
+Build complete
+Scene=Assets/CourseGame/Generated/LastSignal_v02.unity
+Models=course characterMedium + floor detail
+Animator=Idle/Run, no parameters/transitions
+Ground=3x3, tile=12m
+Weapons=2 projectile templates

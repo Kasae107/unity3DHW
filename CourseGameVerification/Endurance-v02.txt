@@ -1,0 +1,11 @@
+Real-time 180-second gameplay run
+2026-10-12T08:58:14
+No accelerated timer, no injected health or damage. Keyboard movement follows a square.
+time=0.0 realtime=0.0 hp=100 kills=0 level=1 shots=0 enemies=0 created=30
+time=30.0 realtime=30.0 hp=100 kills=43 level=6 shots=134 enemies=12 created=30
+time=60.0 realtime=60.0 hp=100 kills=110 level=14 shots=473 enemies=9 created=30
+time=90.0 realtime=90.0 hp=100 kills=189 level=24 shots=1087 enemies=8 created=30
+time=120.0 realtime=120.0 hp=100 kills=302 level=38 shots=1795 enemies=20 created=30
+time=150.0 realtime=150.0 hp=100 kills=432 level=55 shots=2528 enemies=30 created=30
+PASS final=Victory elapsed=180.00 realtime=180.00 hp=100 kills=594 shots=3267
+COMPLETE

@@ -1,0 +1,111 @@
+Last Signal November 23 upgrade-choice verification
+2026-11-23T15:43:37
+PASS Session and GameManager initialized
+PASS Upgrade controller starts with hidden panel and no pending choices
+PASS Interactive upgrade UI has an EventSystem and raycaster
+PASS Welcome freezes gameplay
+PASS Welcome does not start survival timer
+PASS Native survival timer UI starts at 00:00
+PASS Timer formats minute rollover and MM:SS correctly
+PASS Player starts with 100 health
+PASS Enemy pool prewarms 30 inactive enemies
+PASS Two projectile templates prewarm distinct pools
+PASS Ground allocates 49 tiles including preload ring
+PASS Combat bounds exclude the preload ring
+PASS Every loaded tile has exactly one active obstacle
+PASS All three obstacle prefabs appear
+PASS Obstacles have solid colliders
+PASS Player starts at level 1 with 0/5 EXP
+PASS Native Canvas PlayerHUD is connected
+PASS HP and EXP sliders are read-only normalized values
+PASS Slider fill geometry has no fixed-width overflow
+PASS Player Animator contains Idle and Run
+PASS Animated character retains human scale
+PASS Start enters playable state
+PASS Session and UI use one running time source
+PASS W+D input moves player on XZ plane
+PASS Diagonal movement stays normalized
+PASS Timer accumulates actual scaled frame time
+PASS CharacterController stays grounded
+PASS Stopping input returns to Idle animation
+PASS Pause freezes timer and movement
+PASS Pause preserves running state and freezes timer text
+PASS Resume restores gameplay
+PASS Resume continues timer without resetting it
+PASS Enemy starts with existing level-1 base stats and growth module
+PASS Enemy spawn restores full health
+PASS Active enemy registers with GameManager
+PASS Rigidbody enemy pursues player
+PASS Moving enemy plays Run animation
+PASS Animated enemy retains human scale
+PASS WeaponSlot autonomously acquires target and fires
+PASS Actual projectile collision kills and recycles enemy
+PASS Enemy death unregisters from manager
+PASS Actual projectile kill grants exactly one EXP (actual 1/5, level 1)
+PASS Enemy collider contact damages CharacterController player
+PASS Contact attack observes cooldown
+PASS Player HP slider reflects contact damage
+PASS Manual recycle disables enemy
+PASS Non-death recycle grants no EXP
+PASS Five kills give level 2 and 0/6 EXP without duplicate subscriptions
+PASS Level-up opens three choices and pauses inside the battle phase
+PASS Level-up no longer automatically heals or grants attack speed
+PASS Damage button applies only its selected reward
+PASS Single choice closes panel and resumes combat
+PASS Level 2 adds HP only and does not heal existing enemies
+PASS Eleven kills give level 3 and 0/7 EXP
+PASS EXP slider resets to zero at exact level boundary
+PASS Move-speed button applies only +0.5 speed
+PASS Level 3 adds damage only
+PASS Health choice repeatedly increases both max and current HP by 20
+PASS Level 4 applies cyclic HP/damage/speed growth without healing
+PASS Health choice repeatedly increases both max and current HP by 20
+PASS Level 5 applies cyclic HP/damage/speed growth without healing
+PASS Level 6 applies cyclic HP/damage/speed growth without healing
+PASS Level 7 applies cyclic HP/damage/speed growth without healing
+PASS Level 8 applies cyclic HP/damage/speed growth without healing
+PASS Level 9 applies cyclic HP/damage/speed growth without healing
+PASS Level 10 applies cyclic HP/damage/speed growth without healing
+PASS Inspector supports zero growth deltas and recalculates from original baseline
+PASS Restoring Inspector deltas recomputes level-10 stats without stacking
+PASS Enemy health UI reflects upgraded max HP without restoring damage
+PASS Repeated pool reuse at the same level keeps equal stats and restores full upgraded HP
+PASS Growth and repeated recycling do not award EXP
+PASS Every actual gained level emits exactly one notification
+PASS Pooled enemy spawns with a full health bar
+PASS Enemy world-space health bar tracks nonlethal damage
+PASS Enemy health bar faces camera
+PASS Repeated spawn/death reuses prewarmed enemies
+PASS Projectile pool lends template instance
+PASS Projectile lifetime returns instance to pool
+PASS Reused projectile resets lifetime and active state
+PASS Two gained levels queue two rewards and pause once
+PASS Upgrade selection freezes survival timer
+PASS Manual pause/resume cannot bypass upgrade selection
+PASS First of multiple choices keeps panel open and time frozen
+PASS Final choice restores the previous non-default time scale
+PASS Multiple choices apply exactly the selected attribute deltas
+PASS Extra click after all rewards cannot grant a duplicate
+PASS Damage upgrade does not mutate template or already fired projectile
+PASS Actual WeaponSlot firing applies base plus player damage bonus on pooled shots
+PASS Reward gained during manual pause waits until combat resumes
+PASS Deferred reward opens after resume and returns to normal time
+PASS Projectile impact on solid obstacle returns it to pool
+PASS Overlapping cells keep their tile and obstacle position when crossing boundary
+PASS Returning to released world cell restores deterministic obstacle type and position
+PASS Repeated travel keeps tile and per-prefab obstacle caches bounded
+PASS Crossing tiles updates ground center
+PASS Crossing tiles reuses preloaded ground pool
+PASS Recentered ground retains collider support
+PASS Camera follows player after tile crossing
+PASS EnemySpawner produces recurring batches around player
+PASS Enemy generation respects pool capacity
+PASS Survival countdown reaches victory state (shortened timer)
+PASS Victory stops timer once and preserves final time
+PASS Restart reloads clean welcome state and EXP
+Prior totals=102 0
+PASS Victory closes pending upgrade overlay without resuming battle
+PASS Player death enters defeat and preserves references
+PASS Death stops survival timer with one event
+PASS Death during upgrade selection clears choices, blocks late reward and preserves result pause
+COMPLETE

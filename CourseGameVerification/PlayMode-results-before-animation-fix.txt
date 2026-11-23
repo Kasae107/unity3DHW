@@ -1,0 +1,45 @@
+Last Signal v01 Play Mode verification
+2026-10-12T08:53:16
+PASS Session and GameManager initialized
+PASS Welcome freezes gameplay
+PASS Player starts with 100 health
+PASS Enemy pool prewarms 30 inactive enemies
+PASS Two projectile templates prewarm distinct pools
+PASS Ground allocates exactly nine tiles
+PASS Player Animator contains Idle and Run
+FAIL Animated character retains human scale
+PASS Start enters playable state
+PASS W+D input moves player on XZ plane
+PASS Diagonal movement stays normalized
+PASS CharacterController stays grounded
+PASS Stopping input returns to Idle animation
+PASS Pause freezes timer and movement
+PASS Resume restores gameplay
+PASS Enemy spawn restores full health
+PASS Active enemy registers with GameManager
+PASS Rigidbody enemy pursues player
+PASS Moving enemy plays Run animation
+PASS Animated enemy retains human scale
+PASS WeaponSlot autonomously acquires target and fires
+PASS Actual projectile collision kills and recycles enemy
+PASS Enemy death unregisters from manager
+PASS Enemy collider contact damages CharacterController player
+PASS Contact attack observes cooldown
+PASS Manual recycle disables enemy
+PASS Eight kills upgrade weapon fire rate
+PASS Upgrade heals player
+PASS Repeated spawn/death reuses prewarmed enemies
+PASS Projectile pool lends template instance
+PASS Projectile lifetime returns instance to pool
+PASS Reused projectile resets lifetime and active state
+PASS Crossing tiles updates ground center
+PASS Crossing tiles recycles nine grounds without allocation
+PASS Recentered ground retains collider support
+PASS Camera follows player after tile crossing
+PASS EnemySpawner produces recurring batches around player
+PASS Enemy generation respects pool capacity
+PASS Survival countdown reaches victory state (shortened timer)
+PASS Restart reloads clean welcome state
+Prior totals=38 1
+PASS Player death enters defeat and preserves references
+COMPLETE

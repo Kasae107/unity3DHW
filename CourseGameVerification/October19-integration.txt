@@ -1,0 +1,4 @@
+Applied in place to Assets/CourseGame/Generated/LastSignal_v02.unity
+Three obstacle prefabs; view radius=2; preload rings=1; 49 pooled grounds; 25-cell combat area.
+PlayerExperience: first requirement 5, subsequent ceil(previous*1.1).
+Native PlayerHUD HP/EXP sliders, legacy Text, world-space enemy health sliders.
